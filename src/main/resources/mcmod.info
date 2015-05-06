@@ -1,0 +1,16 @@
+[
+{
+  "modid": "MiscPlus",
+  "name": "MiscPlus",
+  "description": "Sister Mod to MiscAdd (Thing that adds more stuff.)",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ExampleDude"],
+  "credits": "johnsmith0508",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

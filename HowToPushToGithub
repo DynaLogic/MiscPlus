@@ -1,0 +1,17 @@
+git add *  //adds all files to git's tracking (ommit if no files added)
+git commit -a -m "<Some Message>" //create a commit with the title <Some Message> (DO NOT USE)
+git commit -a //open a vim session to eddit the commit message (see Vim commands below)
+git push //self explanitory
+
+git pull //get the latest from github
+
+
+Vim Commands:
+
+'I' - enter 'I'nsert mode
+'G' - 'G'oto end of file
+<#>G - 'G'o to line #
+'esc' - leave Insert mode or command mode
+':wq' - tell vim to 'w'rite and 'q'uit
+
+so: go to end of file, enter Insert mode, write message, enter command mode, write and quit

@@ -15,24 +15,23 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.dynaLogic.miscPlus.item;
+package com.dynaLogic.miscPlus.reference;
 
+import com.dynaLogic.miscPlus.init.ModItems;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 /**
  * Created by King_INF3RN0 on 5/5/2015.
  */
-public class ItemMP extends Item
+public class ItemTabMP
 {
-    public ItemMP()
+    public static CreativeTabs MP_TAB2 = new CreativeTabs(Ref.MOD_ID)
     {
-        super();
-        this.setUnlocalizedName("itemMP");
-    }
-
-    @Override
-    public Item setUnlocalizedName(String name)
-    {
-        return super.setUnlocalizedName(name);
-    }
+        @Override
+        public Item getTabIconItem()
+        {
+            return ModItems.itemMP;
+        }
+    };
 }

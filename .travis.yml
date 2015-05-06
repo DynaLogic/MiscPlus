@@ -10,12 +10,12 @@ script:
 notifications:
     email:
         recipients: adamorand88@gmail.com
-        on-success:change
-        on_failure:always
+        on_success: change
+        on_failure: always
     irc:
         channels: "irc.esper.net#johnsmith0508"
-        on_success:always
-        on_failure:change
+        on_success: always
+        on_failure: change
         template:
             - "build #%{build_number} of %{repository_name} just %{result} after %{duration}"
             - "change view: %{compare_url} build detailed: %{build_url}"

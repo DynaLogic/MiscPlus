@@ -17,10 +17,17 @@
 
 package com.dynaLogic.miscPlus.proxy;
 
+import com.dynaLogic.miscPlus.init.ModBlocks;
+import com.dynaLogic.miscPlus.init.ModItems;
+
 /**
  * Created by King_INF3RN0 on 5/5/2015.
  */
 public class ClientProxy extends CommonProxy
 {
+    @Override
+    public void registerRenders()
+    {
 
+    }
 }

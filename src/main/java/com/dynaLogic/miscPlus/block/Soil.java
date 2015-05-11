@@ -31,5 +31,7 @@ public class Soil extends BlockMP
         this.setUnlocalizedName("soil");
         this.setCreativeTab(TabMP.MP_TAB);
         this.setStepSound(soundTypeGravel);
+        this.setHardness(0.5F);
+        this.setHarvestLevel("shovel", 0);
     }
 }

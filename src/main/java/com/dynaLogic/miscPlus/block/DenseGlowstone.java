@@ -18,21 +18,45 @@
 package com.dynaLogic.miscPlus.block;
 
 import com.dynaLogic.miscPlus.reference.TabMP;
+import net.minecraft.block.BlockGlowstone;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.util.MathHelper;
+
+import java.util.Random;
 
 /**
- * Created by King_INF3RN0 on 5/5/2015.
+ * Created by King_INF3RN0 on 5/10/2015.
  */
-public class Ceramic extends BlockMP
+public class DenseGlowstone extends BlockGlowstone
 {
-    public Ceramic()
+
+    public DenseGlowstone()
     {
         super(Material.glass);
+        this.setUnlocalizedName("denseGlowstone");
         this.setCreativeTab(TabMP.MP_TAB);
-        this.setUnlocalizedName("ceramic");
         this.setStepSound(soundTypeGlass);
-        this.setHardness(1.5F);
-
-
+        this.setLightLevel(1.0F);
+        this.setHardness(0.5F);
     }
+
+    public int quantityDroppedWithBonus(int fortune, Random random)
+    {
+        return MathHelper.clamp_int(this.quantityDropped(random) + random.nextInt(fortune + 1), 1, 4);
+    }
+
+    public int quantityDropped(Random random)
+    {
+        return 2 + random.nextInt(3);
+    }
+
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    {
+        return Items.glowstone_dust;
+    }
+
+
 }

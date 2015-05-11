@@ -17,6 +17,7 @@
 
 package com.dynaLogic.miscPlus.block;
 
+import com.dynaLogic.miscPlus.reference.TabMP;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -29,6 +30,8 @@ public class BlockMP extends Block
     {
         super(material);
         this.setUnlocalizedName("blockMP");
+        this.setCreativeTab(TabMP.MP_TAB);
+        this.setHardness(60.0F);
     }
 
     @Override

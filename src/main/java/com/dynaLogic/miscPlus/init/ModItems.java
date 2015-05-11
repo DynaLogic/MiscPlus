@@ -18,6 +18,9 @@
 package com.dynaLogic.miscPlus.init;
 
 import com.dynaLogic.miscPlus.item.ItemMP;
+import com.dynaLogic.miscPlus.reference.Ref;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -27,10 +30,26 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModItems
 {
     public static Item itemMP = new ItemMP();
+    private static Item item;
 
 
     public static void init()
     {
         GameRegistry.registerItem(itemMP,"ItemMP");
+    }
+
+    public static void register()
+    {
+        GameRegistry.registerItem(itemMP,"ItemMP");
+    }
+
+    public static void registerRenders()
+    {
+
+    }
+
+    public static void registerRender(Item item)
+    {
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Ref.RESOURCE_PREFIX + item.getUnlocalizedName().substring(5), "inventory"));
     }
 }

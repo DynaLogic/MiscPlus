@@ -25,5 +25,5 @@ public class Ref
     public static final String MOD_ID = "MiscPlus";
     public static final String MOD_NAME = "MiscPlus";
     public static final String VERSION = "@VERSION@";
-    public static final String RESCOURCE_PREFIX = MOD_ID.toLowerCase() + ":";
+    public static final String RESOURCE_PREFIX = MOD_ID.toLowerCase() + ":";
 }

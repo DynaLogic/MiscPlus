@@ -15,17 +15,24 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.dynaLogic.miscPlus.proxy;
+package com.dynaLogic.miscPlus.block;
+
+import com.dynaLogic.miscPlus.reference.TabMP;
+import net.minecraft.block.material.Material;
 
 /**
- * Created by King_INF3RN0 on 5/5/2015.
+ * Created by King_INF3RN0 on 5/7/2015.
  */
-public abstract class CommonProxy implements IProxy
+public class ObsidianBrick extends BlockMP
 {
-
-    public void registerRenders()
+    public ObsidianBrick()
     {
-
+        super(Material.rock);
+        this.setUnlocalizedName("obsidianBrick");
+        this.setHardness(60.0F);
+        this.setHarvestLevel("pickaxe", 3);
+        this.setStepSound(soundTypeStone);
+        this.setResistance(18000.0F);
+        this.setCreativeTab(TabMP.MP_TAB);
     }
-
 }

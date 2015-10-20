@@ -65,12 +65,12 @@ public class ModBlocks
 
     public static void registerRender(Block block)
     {
-        registerRender(blockMP);
-        registerRender(ceramic);
-        registerRender(obsidianBrick);
-        registerRender(soil);
-        registerRender(smoothObsidian);
-        registerRender(denseGlowstone);
+        registerRenders(blockMP);
+        registerRenders(ceramic);
+        registerRenders(obsidianBrick);
+        registerRenders(soil);
+        registerRenders(smoothObsidian);
+        registerRenders(denseGlowstone);
     }
 
     public static void registerRenders(Block block)
